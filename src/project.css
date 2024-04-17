@@ -1,0 +1,114 @@
+/* Main title */
+.title {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+/* Main scatter plot, clustering. Edit for the circles */
+.dot {
+    stroke: #000000;
+    stroke-width: 1px;
+    opacity: 0.5;
+}
+
+/* Main scatter plot, clustering. Edit for the tooltip */
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 6px;
+    font: 12px sans-serif;
+    background: rgb(217, 230, 255);
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-30px);
+}
+/* Main scatter plot, clustering. Edit for the selected circles */
+.selected {
+    stroke-width: 2px;
+    stroke: #333;
+    opacity: 1;
+}
+
+
+/* Changes all the svg boarders */
+svg {
+    border: 1.5px solid rgb(0, 0, 0); 
+    border-radius: 10px;
+}
+
+/* Line of the PDF of return distribution */
+.normal-curve-path {
+    stroke: rgb(0, 0, 0);  /* Line color */
+    stroke-width: 1; /* Line width */
+}
+/* Color of the area under the PDF that is less than 0 */
+.light-red-PDF {
+    fill: rgb(244, 130, 130); 
+}
+/* Color of the area under the PDF that is greater than 0 */
+.light-green-PDF {
+    fill: rgb(150, 255, 150); 
+}
+
+
+/* Text */
+text {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    fill: #333333; 
+}
+
+
+/* 'Record Point' button */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* 'Record Point' button when hovered over */
+button:hover {
+    background-color: #338737;
+}
+
+
+/* Styling for axis labels */
+.axis-label {
+    font-family: "Roboto", sans-serif; /* Specify the font */
+    font-size: 10px; /* Specify the font size */
+    fill: #333; /* Set the text color */
+}
+/* Styling for x-axis tick labels */
+.x-axis text {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    fill: #333;
+}
+/* Styling for y-axis tick labels */
+.y-axis text {
+    font-family: "Roboto", sans-serif; 
+    font-size: 10px;
+    fill: #666;
+}
+
+
+/* Portfolios Scatter plot visuals */
+.scatter-point {
+    stroke: black; /* This sets the color of the stroke around the points */
+    stroke-width: 1px; /* This sets the width of the stroke */
+}
+.scatter-point.efficient {
+    fill: rgb(94, 138, 233); /* Color for efficient points */
+}
+.scatter-point.inefficient {
+    fill: rgb(232, 126, 126); /* Color for inefficient points */
+}
