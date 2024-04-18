@@ -373,8 +373,8 @@ function Visualization () {
             }
 
             Promise.all([
-                d3.csv("sp_500_clustering.csv"),
-                d3.csv("sp_500_stocks.csv")
+                d3.csv(`${process.env.PUBLIC_URL}/sp_500_clustering.csv`),
+                d3.csv(`${process.env.PUBLIC_URL}/sp_500_stocks.csv`)
             ]).then(function (files) {
                 data = files[0];
                 stockData = files[1];
