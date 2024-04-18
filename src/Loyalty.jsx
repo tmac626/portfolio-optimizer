@@ -12,7 +12,7 @@ function Loyalty() {
 
   useEffect(() => {
     Promise.all([
-      d3.csv('./sp_500_loyalty.csv')
+      d3.csv(`${process.env.PUBLIC_URL}/sp_500_loyalty.csv`)
     ]).then(function (files) {
       const csvData = files[0]
       setData(csvData)
